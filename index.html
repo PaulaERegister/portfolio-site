@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Paula Register</title>
+        <link rel="shortcut icon" type="image/png" href="./media/favicon.png"/> 
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/nav.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-serif-pro" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cmu-serif" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-sans-pro" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/montserrat" type="text/css"/>
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>
+            $(function(){
+              $("#header").load("nav.html");
+            });
+            $(function(){
+              $("#footer-placeholder").load("footer.html");
+            });
+            function topFunction() {
+                document.body.scrollTop = 0; // For Safari
+                document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+            }
+            window.onload=function()  //executes when the page finishes loading
+            {
+                setTimeout(func1, 1000);  //sets a timer which calls function func1 after 2,000 milliseconds = 2 secs.
+
+            };
+            function func1()
+            {
+                document.getElementById("header-text").className="show";
+            }
+/*
+            $(function(){  // $(document).ready shorthand
+              $('.monster').fadeIn('slow');
+            });
+*/
+
+            $(document).ready(function() {
+
+                /* Every time the window is scrolled ... */
+                $(window).scroll( function(){
+
+                    /* Check the location of each desired element */
+                    $('.hideme').each( function(i){
+
+                        var bottom_of_object = $(this).position().top + $(this).outerHeight();
+                        var bottom_of_window = $(window).scrollTop() + $(window).height();
+                        
+                        var top_of_object = $(this).position().top - $(this).outerHeight();
+                        var top_of_window = $(window).scrollTop();
+                        if( bottom_of_window > bottom_of_object ){
+
+                            $(this).animate({'opacity':'1'},1500);
+
+                        }
+
+                    }); 
+
+                });
+
+            });
+/*            ScrollReveal().reveal('.intro');
+            ScrollReveal().reveal('.headline');
+
+		ScrollReveal().reveal('.intro-slide', {duration: 1000, distance: '110px', origin: 'left', reset: true});
+   		ScrollReveal().reveal('.intro-slide-interval', {duration: 1500, distance: '25%', origin: 'left', interval: 100, reset:true});    
+        ScrollReveal().reveal('.see-more', {duration: 2000, distance: '50%', origin: 'bottom', reset:true});     
+        ScrollReveal().reveal('.portfolio-interval', {duration: 1500, distance: '25%', origin: 'left', interval: 600, reset:true});      
+        ScrollReveal().reveal('.skills-interval', {duration: 1500, distance: '50%', origin: 'top', interval: 600, reset:true, delay: 1000});     */
+	</script>  
+<!--
+        <style>/*https://medium.freecodecamp.org/15-web-developer-portfolios-to-inspire-you-137fb1743cae
+     https://timmyomahony.com/ 
+            https://sebkay.com/
+            https://imdev.in/
+            http://mattfarley.ca/
+            https://www.rezo-zero.com/en
+            https://www.strv.com/
+            http://preview.themeforest.net/item/lank-creative-design-agency-personal-portfolio-html-template/full_screen_preview/20000858?_ga=2.206893013.79418353.1544299053-650429668.1543625615
+            https://preview.themeforest.net/item/trons-clean-portfolio-agency-wordpress-theme/full_screen_preview/20268816?_ga=2.206893013.79418353.1544299053-650429668.1543625615
+            http://www.garysheng.com/
+            https://www.werkstatt.fr/en/
+            */
+
+.box {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+.box.show-front  { transform: translateZ( -50px) rotateY(   0deg); }
+.box.show-back   { transform: translateZ( -50px) rotateY(-180deg); }
+.box.show-right  { transform: translateZ(-50vw) rotateY( -90deg); }
+.box__face {
+  position: absolute;
+  border: 2px solid black;
+    height:10vh;
+}
+
+.box__face--front,
+.box__face--back {
+  width: 100vw;
+}
+
+.box__face--right {
+    width: 40vw;
+    left: 30vw;
+    background: hsla( 60, 100%, 50%, 1);
+    transform: rotateY( 90deg) translateZ(50vw);
+}
+
+.box__face--front  { 
+    background: hsla(  0, 100%, 50%, 1);
+    transform: rotateY(  0deg) translateZ( 50px); 
+}
+.box__face--back   { 
+    transform: rotateY(180deg) translateZ( 50px); 
+    background: hsla(120, 100%, 50%, 1); 
+}
+        </style>
+-->
+
+    </head>
+    <body>
+        <!--Navigation bar-->
+        <div id="header" >
+        </div>
+<!--  <div class="box">
+    <div class="box__face box__face--front">front</div>
+    <div class="box__face box__face--back">back</div>
+    <div class="box__face box__face--right">Right</div>
+  </div>
+<p class="radio-group" style="padding-top:20%">
+  <label>
+    <input type="radio" name="rotate-cube-side" value="front" checked /> front
+  </label>
+          <label>
+    <input type="radio" name="rotate-cube-side" value="right" /> right
+  </label>
+  <label>
+    <input type="radio" name="rotate-cube-side" value="back" /> back
+  </label>
+
+</p>
+        <script>var box = document.querySelector('.box');
+var radioGroup = document.querySelector('.radio-group');
+var currentClass = '';
+
+function changeSide() {
+  var checkedRadio = radioGroup.querySelector(':checked');
+  var showClass = 'show-' + checkedRadio.value;
+  if ( currentClass ) {
+    box.classList.remove( currentClass );
+  }
+  box.classList.add( showClass );
+  currentClass = showClass;
+}
+// set initial side
+changeSide();
+
+radioGroup.addEventListener( 'change', changeSide );</script>-->
+        <!--end of Navigation bar-->
+        <div class="content" id="body"> 
+            <a name="intro"></a>
+            <div class="intro">
+                <div class="intro-slide" id="intro-slide">
+                    <h1 class="intro-h1 h1-accent intro-slide-interval hideme">
+                        Paula Register
+                    </h1>
+                    <h2 class="intro-slide-interval hideme">
+                        Full-Stack Web Developer
+                    </h2>
+                    <img src="./media/paula_register.png" class="paula_img hideme" alt="A headshot of Paula Register">
+                    <p class="intro-description hideme">
+                        I'm Paula Register, a full-stack web developer and Computer Science major at Rochester Institute of Technology from Nashville, Tennessee. Building functional, elegant solutions and creating clean, user-friendly websites is my passion. You can check out some of my lastest work below!
+                    </p>
+                    <p class="intro-description">
+                        You can contact me at per4521@g.rit.edu.
+                    </p>
+                    <div class="see-more">
+                        <p class="p-see-more">
+                            See what I've done
+                        </p>
+                        <a name="portfolio"></a>
+                        <a href="#portfolio" class="fade-in-slow">
+                            <div class="arrow">
+                                <svg class="clickable svg-link" version="1.0" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <polygon points="0.645,10.383 16,23.871 31.355,10.383 29.375,8.129 16,19.878 2.625,8.129 "></polygon>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>    
+            </div>
+<!--            <div class="intro">
+                <div class="intro-slide" id="intro-slide">
+                    <h1 class="intro-h1 h1-accent intro-slide-interval hideme">
+                        Paula Register
+                    </h1>
+                    <h2 class="intro-slide-interval hideme">
+                        Full-Stack Web Developer
+                    </h2>
+                    <img src="./media/paula_register.png" class="paula_img hideme" alt="A headshot of Paula Register">
+                    <p class="intro-description hideme">
+                        I'm Paula Register, a full-stack web developer and Computer Science major at Rochester Institute of Technology from Nashville, Tennessee. Building functional, elegant solutions and creating clean, user-friendly websites is my passion. You can check out some of my lastest work below!
+                    </p>
+                    <p class="intro-description">
+                        You can contact me at per4521@g.rit.edu.
+                    </p>
+                    <div class="see-more">
+                        <p class="p-see-more">
+                            See what I've done
+                        </p>
+                        <a name="portfolio"></a>
+                        <a href="#portfolio" class="fade-in-slow">
+                            <div class="arrow">
+                                <svg class="clickable svg-link" version="1.0" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <polygon points="0.645,10.383 16,23.871 31.355,10.383 29.375,8.129 16,19.878 2.625,8.129 "></polygon>
+                                </svg>
+                            </div>
+                        </a>
+                    </div>
+                </div>    
+            </div>-->
+            <div class="text-content portfolio portfolio-image">
+                <div class="centered fade-in portfolio-div">
+                    <div class="animate">
+                        <span class="portfolio-span">Portfolio</span>
+                    </div>
+                 </div>
+            </div>
+            <div class="text-content portfolio portfolio-content">
+                <div class="portfolio-flex">
+                    <p> 
+                        <!--Here I've compiled some of my lastest projects and work. I will continue to update this section so check back later!-->
+                        Note for Web and Mobile Project 1: due to NDAs a lot of my work cannot be showcased visually so I need to plan on how to display my work in a more creative way :)
+                        <br /><br />
+                        Since this section is not required for the project (it's just something I'm planning on doing for my personal site later given time) I am leaving it blank for now. I hope that is okay. 
+                    </p>
+                    <h1>Coming Soon...</h1>
+                </div> 
+                <div class="portfolio-what-i-do-image">
+                    <h2 class="h1-portfolio">
+                        <span class="portfolio-interval">What</span>
+                        <span class="portfolio-interval">I</span>
+                        <span class="portfolio-interval">Do</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="skills">
+                <div class="skills-interval clickable skills-div">
+                    <img src="./media/workspace.png" class="skills-img" alt="A graphic of a computer.">
+                    <h2 class="underline-accent">Front End</h2>   
+                </div>
+                <div class="skills-interval clickable skills-div">
+                    <img src="./media/brush.png" class="skills-img" alt="A graphic of paintbrushes">
+                    <h2 class="underline-accent">Design</h2>
+                </div>
+                <div class="skills-interval clickable skills-div">
+                    <img src="./media/responsive.png" class="skills-img" alt="A graphic of two computers">
+                    <h2 class="underline-accent">Back End</h2>
+                </div>
+            </div>
+            <div class="text-content resume">
+                <h1 class="h1-accent clickable">
+                    <a name="resume">Resume</a>
+                </h1>
+                <div class="resume-div">
+                    <h2>Paula Register</h2>
+                    <div class="resume-top-padding">
+                        <h3 class="inline email">per4521@g.rit.edu</h3>
+                        <h3 class="inline">(615) 428-2018</h3>
+                    </div>
+                    <hr>
+                    <h3>EDUCATION</h3>
+                    <h4 class="inline">Bachelor of Science, Rochester Institute of Technology</h4>
+                    <h4 class="inline resume-h4">May 2021</h4>
+                    <div class="resume-top-padding">
+                        <p class="inline resume-p-padding">Major: Computer Science</p>
+                        <p class="inline resume-p-padding">GPA: 3.9</p>
+                        <p class="inline">Honors / Awards: Dean’s List</p>
+                        <p>Activities: Computer Science tutoring, Women in Computing, HoGS, WOESS, No Voice Zone, SSE</p>
+                    </div>
+                    <h4 class="inline">MNVS, Nashville TN</h4>
+                    <h4 class="inline resume-h4">May 2016</h4>
+                    <div class="resume-top-padding">
+                        <p class="inline resume-p-padding-12">Valedictorian, Student Ambassador, Student Leadership Team, Model UN</p>
+                        <p class="inline">GPA: 4.10</p>
+                    </div>
+                    <h3>EXPERIENCE</h3>
+                    <h4 class="inline">
+                        Full-stack Web Developer, Student IT Office at RIT
+                    </h4>
+                    <h4 class="inline resume-h4">Jan 2018 – Aug 2018</h4>
+                    <ul>
+                        <li>Developed, tested, maintained, and rearchitected TigerCenter, a student portal used by over 15,000 students at RIT, using design patterns to optimize the application performance</li>
+                        <li>Met with product stakeholders to understand the business requirements for requested work</li>
+                        <li>Refactored code to enhance readability, efficiency, and usability for future development and debugging</li>
+                        <li>Applied the principles of Scrum as part of an Agile software development team</li>
+                    </ul>
+                    <h4 class="inline">Junior Web Developer, National General Insurance</h4>
+                    <h4 class="inline resume-h4">June 2017 – Aug 2017</h4>
+                    <ul>
+                        <li>Developed and maintained website for administrative use using the Angular 2 framework, HTML, CSS, and C# on the backend </li>   		    
+                    </ul>                                         
+                    <h4 class="inline">Computer Science Student Lab Instructor, RIT</h4>
+                    <h4 class="inline resume-h4">Aug 2017 – Dec 2017, Aug 2018 - Present</h4>
+                    <ul>
+                        <li>Assist professor during class and labs, answering student questions</li>
+                        <li>Grade student’s labs and projects and tutor students in various Computer Science courses</li>
+                    </ul>
+                    <h3>Additional Work and Volunteer Experience</h3>
+                    <ul>
+                        <li>Program Assistant at Nashville Career Advancement Center, worked with Program Director to coordinate and implement orientation training. Was primary lead in training sessions for 250 new interns. Performed basic office and administrative duties such as data entry, copying, filing, and answering telephones, as well as verifying I-9 documentation.</li>
+
+                        <li>Intern at Student Assignment Services under Nashville Career Advancement Center. Worked with other interns to present project plans to redistrict school zones to school administrators using ArcGIS software.</li>
+
+                        <li>Editor, writer, organizer, and volunteer at events for Give a Little Nashville. Editor and volunteer for Strum Magazine. Volunteer for various charitable organizations, including Lifestock for the American Cancer Society, Hope Nation, Over the Rainbow Consignment Sale and the Live 4 Tay Foundation.</li>
+                    </ul>
+                </div>
+                <h4 class="centered">
+                    <a href="assets/resume.pdf" target="_blank">Click for a link to my resume</a>
+                </h4>
+            </div>
+        </div>
+        <!--Footer-->
+        <footer class="footer">
+            <div class="footer-padding">
+                <nav class="footer-nav-bar">
+                    <a class="footer-nav" onclick="topFunction()">Home</a>
+                    <a class="footer-nav" href="#portfolio">Portfolio</a>
+                    <a class="footer-nav" href="#resume">Resume</a>
+                    <a class="footer-nav" href="#education">Education</a>
+                    <a class="footer-nav" href="#personal">Personal</a>
+                </nav>
+                <span class="footer-span">
+                    Designed and built in pure HTML, CSS, and Javascript by Paula Register, 2018.
+                </span>
+            </div>
+        </footer>
+        <!--end of Footer-->
+    </body>
+</html>

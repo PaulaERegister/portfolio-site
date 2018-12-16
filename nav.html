@@ -1,0 +1,64 @@
+<script>
+    let scrollpos = window.scrollY
+    const header = document.querySelector("nav")
+    const header_height = header.offsetHeight
+    var body = document.body,
+    html = document.documentElement;
+    var windowHeight = window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+    var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                           html.clientHeight, html.scrollHeight, html.offsetHeight);
+    const add_class_on_scroll = () => {
+        header.classList.add("fade-in");
+        header.classList.remove('fade-out');
+        header.classList.add("pin-to-top");
+        header.classList.add("black-background")
+    }
+    const remove_class_on_scroll = () => {
+        header.classList.remove("fade-in"); 
+        header.classList.add("fade-out");
+        header.classList.remove("black-background");
+    }
+    window.addEventListener('scroll', function() { 
+        scrollpos = window.scrollY;
+        if (scrollpos >= header_height) { 
+            if (scrollpos >= height-windowHeight) {
+                header.classList.add("fade-out")
+                header.classList.remove("pin-to-top");
+            }
+            else {
+                add_class_on_scroll();
+            }
+        }
+        if(scrollpos < header_height) {
+            remove_class_on_scroll();
+        }
+      })
+</script>
+<nav class="nav-bar" id="nav-bar">
+    <a class="nav-link" href="#portfolio">Portfolio</a>
+    <a class="nav-link" href="#resume">Resume</a>
+    <a class="nav-link" href="#education">Education</a>
+    <a class="nav-link" href="#personal">Personal</a>
+<!--
+    <a class="nav-link" href="#other">Other</a>
+-->
+</nav>
+<div class="header-image">
+    <h1 class="header-tagline fade-in">Hi, I'm</h1>
+    <div id="header-text" class="hide">
+        <div class="centered header-text fade-in">
+            <div class="animate animate-name">Paula</div>
+            <div class="animate delay animate-name">Register</div>
+        </div>
+    </div>
+    <a href="#intro" class="fade-in-slow">
+        <div class="big-arrow">
+            <svg class="clickable svg-arrow" version="1.0" viewBox="0 0 32 32" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <polygon points="0.645,10.383 16,23.871 31.355,10.383 29.375,8.129 16,19.878 2.625,8.129 "></polygon>
+            </svg>
+        </div>
+    </a>
+</div>
+

@@ -1,0 +1,118 @@
+.animate-name {
+    display:inline-block;
+}
+.big-arrow {
+    animation:  bounce 2s infinite;
+    position: absolute; /* Fixed/sticky position */
+    bottom: 10vh; /* Place the button at the bottom of the page */
+    right: 48vw; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+}
+.svg-arrow {
+    height: 2.75rem;
+    fill:white;
+    position: relative;
+    cursor: pointer;
+}
+.fade-in {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+.fade-in-slow {
+    animation: fadein 5s;
+    -moz-animation: fadein 5s; /* Firefox */
+    -webkit-animation: fadein 5s; /* Safari and Chrome */
+    -o-animation: fadein 5s; /* Opera */
+}
+    .fade-out {
+    animation: fadeout 0.5s;
+    -moz-animation: fadeout 0.5s; /* Firefox */
+    -webkit-animation: fadeout 0.5s; /* Safari and Chrome */
+    -o-animation: fadeout 0.5s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+    
+    @keyframes fadeout {
+    from {
+        opacity:1 ;
+    }
+    to {
+        opacity:0
+    }
+}
+@-moz-keyframes fadeout { /* Firefox */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-webkit-keyframes fadeout { /* Safari and Chrome */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+@-o-keyframes fadeout { /* Opera */
+    from {
+        opacity:1;
+    }
+    to {
+        opacity:0;
+    }
+}
+    .pin-to-top{
+        position: fixed;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 500;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s;
+        padding:10px 0 10px 0;
+        margin:0;
+    }
+    .black-background {
+                background-color:black; 
+    opacity: 0.8;
+
+    }
