@@ -52,7 +52,7 @@
                         var bottom_of_window = $(window).scrollTop() + $(window).height();
                         
                         var top_of_object = $(this).position().top - $(this).outerHeight();
-                        var top_of_window = $(window).scrollTop();
+                        var top_of_window = $(window).scrollTop(); 
                         if( bottom_of_window > bottom_of_object ){
 
                             $(this).animate({'opacity':'1'},1500);
@@ -85,6 +85,10 @@
             https://preview.themeforest.net/item/trons-clean-portfolio-agency-wordpress-theme/full_screen_preview/20268816?_ga=2.206893013.79418353.1544299053-650429668.1543625615
             http://www.garysheng.com/
             https://www.werkstatt.fr/en/
+https://static-assets.strikinglycdn.com/webpack/7.d033efd60670e35e34e4-site-bundle.js
+https://static-assets.strikinglycdn.com/detectIE-29660a929516ac61f29b3e574d0424bc6ef4f3c57786c28053ed04c35b8f5a58.js
+https://static-assets.strikinglycdn.com/themes/fresh/main_v4.6cbcfde75ec6e9316caf.bundle.css
+https://iamsteve.me/blog/entry/nice-and-easy-lazy-loading-with-lazysizes-js
             */
 
 .box {
@@ -196,6 +200,21 @@ radioGroup.addEventListener( 'change', changeSide );</script>-->
                     </div>
                 </div>    
             </div>
+                        <div class="skills">
+                <div class="skills-interval clickable skills-div">
+                    <img src="./media/workspace.png" class="skills-img" alt="A graphic of a computer.">
+                    <h2 class="underline-accent">Front End</h2>   
+                </div>
+                <div class="skills-interval clickable skills-div">
+                    <img src="./media/brush.png" class="skills-img" alt="A graphic of paintbrushes">
+                    <h2 class="underline-accent">Design</h2>
+                </div>
+                <div class="skills-interval clickable skills-div">
+                    <img src="./media/responsive.png" class="skills-img" alt="A graphic of two computers">
+                    <h2 class="underline-accent">Back End</h2>
+                </div>
+            </div>
+            
 <!--            <div class="intro">
                 <div class="intro-slide" id="intro-slide">
                     <h1 class="intro-h1 h1-accent intro-slide-interval hideme">
@@ -243,6 +262,7 @@ radioGroup.addEventListener( 'change', changeSide );</script>-->
                     </p>
                     <h1>Coming Soon...</h1>
                 </div> 
+                
                 <div class="portfolio-what-i-do-image">
                     <h2 class="h1-portfolio">
                         <span class="portfolio-interval">What</span>
@@ -250,21 +270,33 @@ radioGroup.addEventListener( 'change', changeSide );</script>-->
                         <span class="portfolio-interval">Do</span>
                     </h2>
                 </div>
+
             </div>
-            <div class="skills">
-                <div class="skills-interval clickable skills-div">
-                    <img src="./media/workspace.png" class="skills-img" alt="A graphic of a computer.">
-                    <h2 class="underline-accent">Front End</h2>   
+            <div style="width:100vw;">
+                    <ul id="rig">
+                        <li>
+                            <a class="rig-cell" href="./national-general.html">
+                                <img class="rig-img" src="media/apple-black-and-white-business-196659.jpg" alt="National General Insurance Company">
+                                <span class="rig-overlay"></span>
+                                <span class="rig-text hide-header">National General Insurance</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="rig-cell" href=./tiger-center.html>
+                                <img class="rig-img" src="media/Rochester_Institute_of_Technology_seal.svg" style="background-color: white;" alt="TigerCenter">
+                                <span class="rig-overlay"></span>
+                                <span class="rig-text hide-header">TigerCenter</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="rig-cell" href="./spreading-the-warmth.html">
+                                <img class="rig-img" src="media/cobblestones-393455_1920.jpg" alt="Spreading the Warmth">
+                                <span class="rig-overlay"></span>
+                                <span class="rig-text hide-header">Spreading the Warmth</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
-                <div class="skills-interval clickable skills-div">
-                    <img src="./media/brush.png" class="skills-img" alt="A graphic of paintbrushes">
-                    <h2 class="underline-accent">Design</h2>
-                </div>
-                <div class="skills-interval clickable skills-div">
-                    <img src="./media/responsive.png" class="skills-img" alt="A graphic of two computers">
-                    <h2 class="underline-accent">Back End</h2>
-                </div>
-            </div>
             <div class="text-content resume">
                 <h1 class="h1-accent clickable">
                     <a name="resume">Resume</a>
