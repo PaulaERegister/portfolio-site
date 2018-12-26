@@ -7,184 +7,27 @@
         <link rel="shortcut icon" type="image/png" href="./media/favicon.png"/> 
         <link rel="stylesheet" href="./assets/css/main.css">
         <link rel="stylesheet" href="./assets/css/nav.css">
+        <link rel="stylesheet" href="./assets/css/portfolio.css">
+        <link rel="stylesheet" href="/assets/css/mobile.css">
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-serif-pro" type="text/css"/>
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cmu-serif" type="text/css"/>
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-sans-pro" type="text/css"/>
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/montserrat" type="text/css"/>
-        
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-
-        <style>
-            .header-image {
-                display: none;
-            }
-            .text-content{
-                height: 250vh;
-                padding: 0;
-            }
-            .carousel-image {
-                height: 100% !important;
-                object-fit: cover;
-                width: 100vw;
-                -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-                -moz-animation: fadein 3s; /* Firefox < 16 */
-                -ms-animation: fadein 3s; /* Internet Explorer */
-                -o-animation: fadein 3s; /* Opera < 12.1 */
-                animation: fadein 3s;
-                animation-fill-mode: forwards;      
-            }
-            .carousel {
-                width: 100vw;
-                height: 75vh;
-                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1));
-
-            }
-            .carousel-controls {
-                width: 100vw;
-                position: absolute;
-                top: 67vh;
-                height: 8vh;
-                line-height: 8vh;
-                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,.8));
-                color: white;
-                -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-                -moz-animation: fadein 3s; /* Firefox < 16 */
-                -ms-animation: fadein 3s; /* Internet Explorer */
-                -o-animation: fadein 3s; /* Opera < 12.1 */
-                animation: fadein 3s;
-                animation-fill-mode: forwards;   
-            }
-            .control {
-                font-size: 2em; 
-                cursor: pointer;
-            }
-            .left {
-                margin-left: 2vw;
-                margin-right: 43vw;
-            }
-            .right {
-                margin-right: 2vw;
-                margin-left: 43vw;
-            }
-            .center-ctrl{
-                width: 10vw;
-            }
-            .circle-selector {
-                cursor: pointer;
-                border-radius: 50%;
-                height: 12px;
-                width: 12px;
-                border-radius: 50%;
-                display: inline-block; 
-            }
-            .circle-selector-white, .circle-selector:hover{
-                background-color: white !important;
-            }
-            .circle-selector-transparent  {
-                background-color: transparent;
-                border:1px solid #ccc;
-            }
-            .text {
-                padding: 1%;
-            }
-            .demo-header {
-                font-size: 2.5em;
-            }
-            .view-site-btn {
-                text-align:center;
-                width: 25vw;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            a.border-button:hover, .border-button:hover {
-                border: 2px solid #333;
-                background-color: transparent !important;
-                color: black;
-                -webkit-transition: 0.5s ease;
-                -moz-transition: 0.5s ease;
-                -o-transition: 0.5s ease;
-                transition: 0.5s ease;
-                opacity: .7;
-            }
-            .button {
-                display: inline-block;
-                text-decoration: none;
-                position: relative;
-                cursor: pointer;
-                padding: 15px 20px;
-                -webkit-border-radius: 4px;
-                -moz-border-radius: 4px;
-                border-radius: 4px;
-                margin: 0 3px 0 0;
-                line-height: normal !important;
-                -webkit-appearance: none;
-                font-size: .9em;
-                font-weight: bold;
-                transition-property: all;
-                -webkit-transition: 0.5s ease;
-                -moz-transition: 0.5s ease;
-                -o-transition: 0.5s ease;
-                transition: 0.5s ease;
-                margin-bottom: 5%;
-            }
-            a.border-button {
-                background: #000000e0;
-                color: white;
-                border: 2px solid black;
-                -webkit-border-radius: 0;
-                -moz-border-radius: 0;
-                border-radius: 0;
-                height: auto;
-                font-size: 1.5em;
-                font-weight: bold;
-            }
-            .demo-text {
-                width: 90vw;
-                margin-left: auto;
-                margin-right:auto;
-            }
-            .technologies {
-                width: 10vw;
-                height: 15vh;
-                padding-left: 2.5%;
-                padding-right: 2.5%;
-                opacity: 0;
-                animation: fadeIn 1s 1;
-                animation-fill-mode: forwards;
-            }
-            .first {
-                padding-left: 0;
-            }
-            .last {
-                padding-right:0;
-            }
-
-            @keyframes fadeIn {
-              0% {
-                opacity: 0.0;
-              }
-              100% {
-                opacity: 1.0;
-              }
-            }
-            .section-header {
-                padding-bottom: 15px;
-                border-bottom: 4px solid #f6f6f6;
-                color: #919191;
-            }
-            .box {
-                padding: 1%;
-                box-shadow: -1px 5px 20px 5px rgba(0, 0, 0, 0.03);
-                transition: 0.3s;
-            }
-            .box:hover {
-                box-shadow: -1px 5px 20px 5px rgba(0, 0, 0, 0.06);
-            }
-        </style>
+        
     </head>
     <body>
-        <div id="header"></div>
+<nav class="nav-bar" id="nav-bar">
+    <a class="nav-link" href="./index.html">Main</a>
+    <a class="nav-link" href="./index.html#portfolio">Portfolio</a>
+    <a class="nav-link" href="./index.html#resume">Resume</a>
+    <a class="nav-link" href="./index.html#education">Education</a>
+    <a class="nav-link" href="./index.html#personal">Personal</a>
+<!--
+    <a class="nav-link" href="#other">Other</a>
+-->
+</nav>
         <div class="content" id="body">
             <div class="text-content">
                 <div class="carousel" id="carousel">
@@ -206,34 +49,43 @@
                         <div class="demo-text">
                             <h1 class="demo-header section-header">TigerCenter</h1>
                             <p>
-                                Nullam dictum dui vel massa tempor aliquam. Pellentesque sit amet sodales mi, at posuere massa. Morbi et est convallis, consequat arcu a, euismod ex. Sed tellus sapien, semper non tincidunt sit amet, pulvinar ut ex. Donec cursus efficitur mauris eget pharetra.
+                                TigerCenter is a site made by students, for students at the Rochester Institute of Technology, created to provide a more user-friendly interface than the often outdated, and difficult to navigate school websites.                                 Created by a self-directed team of students guided by mentors and advisors from multidisciplinary fields, ranging from software engineering to business to web design, TigerCenter provides a more intuitive, well-designed, cohesive place for students to search for and enroll in classes, view their schedule, view dining locations around campus, and calculate their GPA as well as much more.
                             </p>
                             <p>
-                                Suspendisse potenti. Donec porttitor tempus dignissim. Etiam sem nibh, molestie nec pulvinar sed, varius nec libero. Donec sit amet tellus cursus, consectetur velit id, cursus lectus. In ut justo porta, vehicula enim et, sagittis tellus. Sed in rutrum lacus. Aliquam nec mauris facilisis, faucibus massa eget, ornare augue. Praesent nec ex vel velit malesuada fringilla a a arcu.
+                                I worked at the Student IT Office responsible for creating and maintaining TigerCenter as a full-stack web developer, particularly focusing on the frontend. Originally written in AngularJS, TigerCenter was starting to show its age while serving an ever-increasing student body and it was decided that a rearchitecture of the original framework was necessary.
                             </p>
-                            <img class="previous-image" src="media/tigercenterLogin.png">
-
+                            <h1 class="demo-header section-header">The Process</h1>
+                            <p>
+                                During the rearchitecture, we focused heavily on principles of software engineering and design in order to deliver a lightweight but high-performing, mobile first product. We used the iterative Agile methodology to shape our development process, running daily standups, conducting sprint demos, and gathering acceptance criteria from stakeholders.
+                            </p>
+                            <p>
+                                As members of a multidisciplinary team consisting of three Web Developers, a Business Analyst, and a Web Designer, each member was expected to present to the project stakeholders and investors, conduct meetings, and interact with end-users in order to gather information on our target customer base. 
+                                
+                                We conducted several rounds of user acceptance testing and analyzed the results in order to refine our work and ensure that the new website would meet our user base's every expectation.
+                            </p>
+                            <img class="tc-image" src="/media/tigercenterLogin.png">
                         </div>
                     </div>
                     <div class="box">
                         <div class="demo-technologies demo-text">
                             <h1 class="section-header">Technologies Used</h1>
-                            <img class="technologies first" src="media/angular.svg" alt="angular">
-                            <img class="technologies" src="media/java.svg" alt="java">
-                            <img class="technologies" src="media/spring.svg" alt="java spring">
-                            <img class="technologies" src="media/bootstrap.svg" alt="bootstrap">
-    <!--
-                            <img class="technologies" src="media/maven.svg">
-    -->
-                            <img class="technologies" src="media/html5.svg" alt="html5">
-                            <img class="technologies last" src="media/javascript.svg" alt="javascript">
+                            <div style="justify-content: space-around;display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;">
+                                <img class="technologies first" src="media/angular.svg" alt="angular">
+                                <img class="technologies" src="media/java.svg" alt="java">
+                                <img class="technologies" src="media/spring.svg" alt="java spring">
+                                <img class="technologies" src="media/bootstrap.svg" alt="bootstrap">
+        <!--
+                                <img class="technologies" src="media/maven.svg">
+        -->
+                                <img class="technologies" src="media/html5.svg" alt="html5">
+                                <img class="technologies last" src="media/jquery.svg" alt="javascript">
+                            </div>
                         </div>
                         <div class="demo-text">
                             <p>
-                                Nullam dictum dui vel massa tempor aliquam. Pellentesque sit amet sodales mi, at posuere massa. Morbi et est convallis, consequat arcu a, euismod ex. Sed tellus sapien, semper non tincidunt sit amet, pulvinar ut ex. Donec cursus efficitur mauris eget pharetra.
-                            </p>
-                            <p>
-                                Suspendisse potenti. Donec porttitor tempus dignissim. Etiam sem nibh, molestie nec pulvinar sed, varius nec libero. Donec sit amet tellus cursus, consectetur velit id, cursus lectus. In ut justo porta, vehicula enim et, sagittis tellus. Sed in rutrum lacus. Aliquam nec mauris facilisis, faucibus massa eget, ornare augue. Praesent nec ex vel velit malesuada fringilla a a arcu.
+                                On the backend, TigerCenter is a Java project built with Apache Maven, using the Java Spring framework. It uses Angular 4 and jQuery for functionality, and HTML5, CSS, and Bootstrap for design. 
                             </p>
                             <div class="view-site-btn">
                                 <a class="button border-button visit-project-btn" href="https://tigercenter.rit.edu/tigerCenterHome/auth" target="_blank">View Site</a>
@@ -324,4 +176,40 @@
               x[slideIndex-1].style.display = "block";  
               dots[slideIndex-1].className += "circle-selector-white";
             }
-        </script>
+    let scrollpos = window.scrollY
+    const header = document.querySelector("nav")
+    const header_height = header.offsetHeight
+    var body = document.body,
+    html = document.documentElement;
+    var windowHeight = window.innerHeight
+    || document.documentElement.clientHeight
+    || document.body.clientHeight;
+    var height = Math.max( body.scrollHeight, body.offsetHeight, 
+                           html.clientHeight, html.scrollHeight, html.offsetHeight);
+    const add_class_on_scroll = () => {
+        header.classList.add("fade-in");
+        header.classList.remove('fade-out');
+        header.classList.add("pin-to-top");
+        header.classList.add("black-background")
+    }
+    const remove_class_on_scroll = () => {
+        header.classList.remove("fade-in"); 
+        header.classList.add("fade-out");
+        header.classList.remove("black-background");
+    }
+    window.addEventListener('scroll', function() { 
+        scrollpos = window.scrollY;
+        if (scrollpos >= header_height) { 
+            if (scrollpos >= height-windowHeight) {
+                header.classList.add("fade-out")
+                header.classList.remove("pin-to-top");
+            }
+            else {
+                add_class_on_scroll();
+            }
+        }
+        if(scrollpos < header_height) {
+            remove_class_on_scroll();
+        }
+      })
+</script>

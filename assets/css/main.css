@@ -48,12 +48,7 @@ h2 {
     text-align: center;
 }
     
-#footer {
-    position:absolute;
-    bottom:0;
-    width:100%;
-    height:60px;   /* Height of the footer */
-}
+
 .footer-nav {
     font-family: CMUSerifRoman;
     color: white;
@@ -66,7 +61,7 @@ h2 {
 
 .content {
     margin: 0;
-    padding: 0 !important;
+    padding: 0; /* !important*/
 }
 .intro-h1 {
     text-align: center;
@@ -93,7 +88,6 @@ h2 {
 }
 .footer-padding {
     padding: 0.3%;
-    margin-top: 5%
 }
 div .header-text {
     text-align: center;
@@ -381,6 +375,9 @@ div .header-text:after {
     -webkit-animation-delay:.3s;
     animation-delay: .3s;
 }
+/*.slides {
+    width:100vw;
+}*/
 .hide {
  display:none;
 }
@@ -388,7 +385,8 @@ div .header-text:after {
     display: inline-block;
 }
 .resume-div {
-    width:50%; margin-left: 22%; padding:3%; padding-top:1%; margin-top:1%;box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.08); background-color: white
+    width:50%;     margin-left: auto;
+    margin-right: auto; padding:3%; padding-top:1%; margin-top:1%;box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.08); background-color: white
 }
 .resume-top-padding {
     padding-top:1%;
@@ -402,7 +400,7 @@ div .header-text:after {
 .resume-p-padding-12{
     padding-right: 12%;
 }
-.resume-h4 {
+.resume-h4-second {
     display: inline;
     float:right;
     margin: 0;
@@ -488,6 +486,7 @@ div .header-text:after {
     min-height: 0px;
     padding-top: 150px;
     padding-bottom: 150px;
+    margin-bottom: 2%;
     position: relative;
     text-align: center;
     color: white; 
@@ -495,7 +494,6 @@ div .header-text:after {
     height: 0;
     flex-grow: 0;
     flex-shrink: 0;
-    
     box-shadow: 2px 5px 20px rgba(0, 0, 0, 0.27);
 }
 .h1-portfolio {
