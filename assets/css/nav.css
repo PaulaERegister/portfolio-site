@@ -101,8 +101,8 @@
         opacity:0;
     }
 }
-    .pin-to-top{
-        position: fixed;
+.pin-to-top{
+    position: fixed;
     top: 0;
     width: 100%;
     height: auto;
@@ -112,11 +112,10 @@
     -moz-transition: .5s;
     -webkit-transition: .5s;
     transition: .5s;
-        padding:10px 0 10px 0;
-        margin:0;
-    }
-    .black-background {
-                background-color:black; 
+    padding:10px 0 10px 0;
+    margin:0;
+}
+.black-background {
+    background-color:black; 
     opacity: 0.8;
-
-    }
+}
