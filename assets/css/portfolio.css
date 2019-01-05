@@ -7,6 +7,12 @@
 .technologies {
     flex: 1 0 10%;
 }
+.technologies-div {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
 .tc-image {
     max-width: 100%; 
     display: block;
