@@ -5,7 +5,11 @@
     animation:  bounce 2s infinite;
     position: absolute; /* Fixed/sticky position */
     bottom: 10vh; /* Place the button at the bottom of the page */
-    right: 48vw; /* Place the button 30px from the right */
+    width: 100px;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
     z-index: 99; /* Make sure it does not overlap */
 }
 .svg-arrow {
