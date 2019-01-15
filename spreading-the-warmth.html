@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Spreading the Warmth | Paula Register</title>
+        <link rel="shortcut icon" type="image/png" href="./media/favicon.png"/> 
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/nav.css">
+        <link rel="stylesheet" href="./assets/css/portfolio.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-serif-pro" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cmu-serif" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-sans-pro" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/montserrat" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+        <div id="header"></div>
+        <div class="content" id="body">
+            <div class="text-content">
+                <div class="carousel" id="carousel">
+                  <img class="carousel-image" src="media/national-general-insurance-logo-vector.svg">
+                  <img class="carousel-image" src="media/tigerCenterHome.png">
+                  <img class="carousel-image" src="media/tigerCenterDining.png">
+                  <div class="carousel-controls">
+                    <span class="control left" onclick="plusDivs(-1)">&#10094;</span>
+                    <span class="center-ctrl">
+                        <span class="circle-selector circle-selector-transparent " onclick="currentDiv(1)"></span>
+                        <span class="circle-selector circle-selector-transparent " onclick="currentDiv(2)"></span>
+                        <span class="circle-selector circle-selector-transparent " onclick="currentDiv(3)"></span>
+                    </span>
+                    <span class="control right" onclick="plusDivs(1)">&#10095;</span>
+                  </div>
+                </div>
+                <div class="text">
+                    <div class="box">
+                        <div class="demo-text">
+                            <h1 class="demo-header section-header">TigerCenter</h1>
+                            <p>
+                                Nullam dictum dui vel massa tempor aliquam. Pellentesque sit amet sodales mi, at posuere massa. Morbi et est convallis, consequat arcu a, euismod ex. Sed tellus sapien, semper non tincidunt sit amet, pulvinar ut ex. Donec cursus efficitur mauris eget pharetra.
+                            </p>
+                            <p>
+                                Suspendisse potenti. Donec porttitor tempus dignissim. Etiam sem nibh, molestie nec pulvinar sed, varius nec libero. Donec sit amet tellus cursus, consectetur velit id, cursus lectus. In ut justo porta, vehicula enim et, sagittis tellus. Sed in rutrum lacus. Aliquam nec mauris facilisis, faucibus massa eget, ornare augue. Praesent nec ex vel velit malesuada fringilla a a arcu.
+                            </p>
+                            <img class="previous-image" src="media/tigercenterLogin.png">
+
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="demo-technologies demo-text">
+                            <h1 class="section-header">Technologies Used</h1>
+                            <div> <!-- style="width: 40vw;
+    margin-left: auto;
+    margin-right: auto;"-->
+                                <img class="technologies" src="media/bootstrap.svg" alt="bootstrap">
+                                <img class="technologies" src="media/html5.svg" alt="html5">
+                                <img class="technologies last" src="media/javascript.svg" alt="javascript">
+                            </div>
+                        </div>
+                        <div class="demo-text">
+                            <p>
+                                Nullam dictum dui vel massa tempor aliquam. Pellentesque sit amet sodales mi, at posuere massa. Morbi et est convallis, consequat arcu a, euismod ex. Sed tellus sapien, semper non tincidunt sit amet, pulvinar ut ex. Donec cursus efficitur mauris eget pharetra.
+                            </p>
+                            <p>
+                                Suspendisse potenti. Donec porttitor tempus dignissim. Etiam sem nibh, molestie nec pulvinar sed, varius nec libero. Donec sit amet tellus cursus, consectetur velit id, cursus lectus. In ut justo porta, vehicula enim et, sagittis tellus. Sed in rutrum lacus. Aliquam nec mauris facilisis, faucibus massa eget, ornare augue. Praesent nec ex vel velit malesuada fringilla a a arcu.
+                            </p>
+                            <div class="view-site-btn">
+                                <a class="button border-button visit-project-btn" href="https://tigercenter.rit.edu/tigerCenterHome/auth" target="_blank">View Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-padding">
+                <nav class="footer-nav-bar">
+                    <a class="footer-nav" onclick="topFunction()">Home</a>
+                    <a class="footer-nav" href="#portfolio">Portfolio</a>
+                    <a class="footer-nav" href="#resume">Resume</a>
+                    <a class="footer-nav" href="#education">Education</a>
+                    <a class="footer-nav" href="#personal">Personal</a>
+                </nav>
+                <span class="footer-span">
+                    Designed and built in pure HTML, CSS, and Javascript by Paula Register, 2018.
+                </span>
+            </div>
+        </footer>
+    </body>
+    
+</html>
+        <script>
+            $(function(){
+              $("#header").load("nav.html");
+            });
+            $(function(){
+              $("#footer-placeholder").load("footer.html");
+            });
+            
+            $(function(){
+                $(".technologies").each(function(index){
+                 $(this).css({
+                      'animation-delay' : 0.5*(1+index) + 's'
+                 });
+                console.log($(this).css)
+
+             });
+            })
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+            $(document).ready(function() {  
+              var auto_slide = 1;  
+              var hover_pause = 1; 
+              var auto_slide_seconds = 5000;
+              if(auto_slide == 1){    
+                    var timer = setInterval('showDivs(slideIndex+=1)', auto_slide_seconds);  
+                    $('#hidden_auto_slide_seconds').val(auto_slide_seconds);  
+                }  
+
+                //check if hover pause is enabled  
+                if(hover_pause == 1){  
+                    //when hovered over the list  
+                    $('#carousel').hover(function(){  
+                        //stop the interval  
+                        clearInterval(timer)  
+                    },function(){  
+                        //and when mouseout start it again  
+                        timer = setInterval('showDivs(slideIndex+=1)', auto_slide_seconds);  
+                    });  
+
+                } 
+            });
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("carousel-image");
+              var dots = document.getElementsByClassName("circle-selector");
+              if (n > x.length) {slideIndex = 1}    
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              for (i = 0; i < dots.length; i++) {
+                 dots[i].className = dots[i].className.replace("circle-selector-white", "");
+              }
+              x[slideIndex-1].style.display = "block";  
+              dots[slideIndex-1].className += "circle-selector-white";
+            }
+        </script>

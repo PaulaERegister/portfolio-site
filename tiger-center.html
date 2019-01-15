@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>TigerCenter | Paula Register</title>
+        <link rel="shortcut icon" type="image/png" href="./media/favicon.png"/> 
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/css/nav.css">
+        <link rel="stylesheet" href="./assets/css/portfolio.css">
+        <link rel="stylesheet" href="./assets/css/mobile.css">
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-serif-pro" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cmu-serif" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/source-sans-pro" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
+        <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/montserrat" type="text/css"/>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    </head>
+    <body>
+        <nav class="nav-bar" id="nav-bar">
+            <a class="nav-link" href="./index.html">Main</a>
+            <a class="nav-link" href="./index.html#portfolio">Portfolio</a>
+            <a class="nav-link" href="./index.html#resume">Resume</a>
+            <a class="nav-link" href="./index.html#education">Education</a>
+            <a class="nav-link" href="./index.html#personal">Personal</a>
+        </nav>
+        <div class="content" id="body">
+            <div class="text-content">
+                <div class="carousel" id="carousel">
+                  <img class="carousel-image" src="media/TigerCenter.png">
+                  <img class="carousel-image" src="media/tigerCenterHome.png">
+                  <img class="carousel-image" src="media/tigerCenterDining.png">
+                  <div class="carousel-controls">
+                    <span class="control left" onclick="plusDivs(-1)">&#10094;</span>
+                    <span class="center-ctrl">
+                        <span class="circle-selector circle-selector-transparent " onclick="currentDiv(1)"></span>
+                        <span class="circle-selector circle-selector-transparent " onclick="currentDiv(2)"></span>
+                        <span class="circle-selector circle-selector-transparent " onclick="currentDiv(3)"></span>
+                    </span>
+                    <span class="control right" onclick="plusDivs(1)">&#10095;</span>
+                  </div>
+                </div>
+                <div class="text">
+                    <div class="box">
+                        <div class="demo-text">
+                            <h1 class="demo-header section-header">TigerCenter</h1>
+                            <p>
+                                TigerCenter is a site made by students, for students at the Rochester Institute of Technology, created to provide a more user-friendly interface than the often outdated, and difficult to navigate school websites.                                 Created by a self-directed team of students guided by mentors and advisors from multidisciplinary fields, ranging from software engineering to business to web design, TigerCenter provides a more intuitive, well-designed, cohesive place for students to search for and enroll in classes, view their schedule, view dining locations around campus, and calculate their GPA as well as much more.
+                            </p>
+                            <p>
+                                I worked at the Student IT Office responsible for creating and maintaining TigerCenter as a full-stack web developer, particularly focusing on the frontend. Originally written in AngularJS, TigerCenter was starting to show its age while serving an ever-increasing student body and it was decided that a rearchitecture of the original framework was necessary.
+                            </p>
+                            <h1 class="demo-header section-header">The Process</h1>
+                            <p>
+                                During the rearchitecture, we focused heavily on principles of software engineering and design in order to deliver a lightweight but high-performing, mobile first product. We used the iterative Agile methodology to shape our development process, running daily standups, conducting sprint demos, and gathering acceptance criteria from stakeholders.
+                            </p>
+                            <p>
+                                As members of a multidisciplinary team consisting of three Web Developers, a Business Analyst, and a Web Designer, each member was expected to present to the project stakeholders and investors, conduct meetings, and interact with end-users in order to gather information on our target customer base. 
+                                
+                                We conducted several rounds of user acceptance testing and analyzed the results in order to refine our work and ensure that the new website would meet our user base's every expectation.
+                            </p>
+                            <img class="tc-image" src="./media/tigercenterLogin.png">
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="demo-technologies demo-text">
+                            <h1 class="section-header">Technologies Used</h1>
+                            <div class="technologies-div">
+                                <img class="technologies first" src="media/angular.svg" alt="angular">
+                                <img class="technologies" src="media/java.svg" alt="java">
+                                <img class="technologies" src="media/spring.svg" alt="java spring">
+                                <img class="technologies" src="media/bootstrap.svg" alt="bootstrap">
+        <!--
+                                <img class="technologies" src="media/maven.svg">
+        -->
+                                <img class="technologies" src="media/html5.svg" alt="html5">
+                                <img class="technologies last" src="media/jquery.svg" alt="javascript">
+                            </div>
+                        </div>
+                        <div class="demo-text">
+                            <p>
+                                On the backend, TigerCenter is a Java project built with Apache Maven, using the Java Spring framework. It uses Angular 4 and jQuery for functionality, and HTML5, CSS, and Bootstrap for design. 
+                            </p>
+                            <div class="view-site-btn">
+                                <a class="button border-button visit-project-btn" href="https://tigercenter.rit.edu/tigerCenterHome/auth" target="_blank">View Site</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-padding">
+                <nav class="footer-nav-bar">
+                    <a class="footer-nav" onclick="topFunction()">Home</a>
+                    <a class="footer-nav" href="#portfolio">Portfolio</a>
+                    <a class="footer-nav" href="#resume">Resume</a>
+                    <a class="footer-nav" href="#education">Education</a>
+                    <a class="footer-nav" href="#personal">Personal</a>
+                </nav>
+                <span class="footer-span">
+                    Designed and built in pure HTML, CSS, and Javascript by Paula Register, 2018.
+                </span>
+            </div>
+        </footer>
+    </body>
+    
+</html>
+<script src="./assets/javascript/portfolio.js"></script>

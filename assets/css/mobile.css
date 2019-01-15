@@ -1,0 +1,219 @@
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and  (max-width: 600px){
+    html {
+        width: 100vw;
+        max-width: 100vw;
+        font-size: 10px;
+    }
+    .technologies {
+        flex: 1 0 21% !important;
+    }
+    .view-site-btn {
+        width:40vw;
+    }
+    .center-ctrl {
+        width: 30vw;
+    }
+    .left {
+        margin-left: 5vw;
+    }
+    .right {
+        margin-right: 6vw;
+    }
+    .center-ctrl{
+        width: 15vw;
+    }
+    .header-image {
+        height: 75vh;
+    }
+    .nav-link {
+        font-size: 1.4em;
+    }
+    .nav-bar {
+        padding-top: 3%;
+    }
+    .pin-to-top {
+        padding: 2% !important;
+        padding-top: 3% !important;
+    }
+    .header-tagline {
+        line-height:25vh;
+        font-size: 6em;
+        margin-top: 0%;
+    }
+    .svg-arrow {
+        height: 10rem !important;
+    }
+    .header-text {
+        position: relative;
+        width: 100%;
+        background-color: #00000033;
+    }
+    .animate {
+        font-size: 13vw;
+    }
+    div .header-text:before, div .header-text:after {
+        background-color: transparent;
+        display: inherit;
+    }
+    .intro {
+        padding: 0;
+    }
+    .intro-h1 {
+        font-size: 13vw;
+    }
+    #intro-slide > h2 {
+        font-size: 3em;
+    }
+    .paula_img {
+        width: 55%;
+    }
+    .intro-description {
+        font-size: 2.9em;
+        padding-left: 1%;
+        padding-right: 1%;
+        padding-bottom: 0;
+    }
+    .see-more {
+        font-size: 5em;
+    }
+    .p-see-more {
+        margin: 0;
+    }
+    .svg-link {
+        height: 5.75rem;
+    }
+    .portfolio-image {
+        height: 25vh;
+    }
+    .portfolio-span {
+        line-height: 25vh;
+    }
+    .portfolio-content {
+        height: 45vh;
+    }
+    .portfolio-what-i-do-image {
+        background-size: cover;
+        flex-basis: 65vw;
+        height: 40vh;
+        margin-right: 1%;
+    }
+    .h1-portfolio {
+        top: 2.5vh;
+        font-size: 5.5em;
+    }
+    .slides, #rig {
+        height: 100vh;
+    }
+    #rig li {
+        width: 100%;
+        height: 33.3vh;   
+    }
+    .rig-cell {
+        width: inherit;
+        height: inherit;
+    }
+    .rig-text {
+        font-size: 30px;
+    }
+    .resume-h1 {
+        font-size: 12vw;
+        margin: 0;
+    }
+    .resume-h2 {
+        font-size: 8vw;
+    }
+    .resume-h3 {
+        font-size: 4.2vw;
+        margin: 0
+    }
+    .resume-h4, .resume-h4-second {
+        font-size: 1.5em;
+    }
+    .text-content.resume p {
+        font-size: 1.3em;
+    }
+    .text-content.resume ul {
+        font-size: 1.5em;
+    }
+    .resume-div {
+        width: 90%;
+    }
+    .resume-top-padding {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 1%;
+    }
+    .resume-section-header {
+        font-size: 6vw;
+        margin-top: 1.5%;
+        margin-bottom: 1.5%;
+    }
+    .resume-p-padding {
+        padding-right: 13%;
+    }
+    .resume-link {
+        font-size: 5vw;
+    }
+    .footer {
+        height: 5% !important;
+        position: inherit;
+        bottom: inherit;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 601px) and (max-width: 767px) {
+    html {
+        width: fit-content;
+        max-width: fit-content;
+    }
+    .resume-div {
+        width: 90%;
+    }
+    .rig-text {
+        font-size: 25px;
+    }
+    .portfolio-what-i-do-image {
+        flex-basis: 45vw;
+    }
+    .h1-portfolio {
+        font-size: 3em;
+    }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    
+}
+@media print {
+
+    #header, .footer, .paula_img, .skills, .portfolio-image, .portfolio-what-i-do-image,
+    .resume-link, .carousel, .tc-image, .technologies, .nav-bar, .visit-project-btn, .slides {
+        display: none;
+    }
+    .intro-slide, .intro-slide-interval, .hideme, .portfolio-span, .intro {
+        display: block;
+    }
+    .body{
+        color: black;
+        background-color: white;
+    }
+    .resume-div {
+        width: 90%;
+        margin-left: 0;
+    }
+    
+}

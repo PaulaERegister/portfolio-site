@@ -1,0 +1,197 @@
+.nav-bar{
+    background-color: black;
+    padding: 1%;
+    opacity: 0.6;
+    margin: 0;
+}
+.technologies {
+    flex: 1 0 10%;
+}
+.technologies-div {
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.tc-image {
+    max-width: 100%; 
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    height: auto;
+    width: auto;
+}
+.text-content{
+    padding: 0;
+}
+            .carousel-image {
+                height: 100% !important;
+                object-fit: cover;
+                width: 100vw;
+                -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: fadein 3s; /* Firefox < 16 */
+                -ms-animation: fadein 3s; /* Internet Explorer */
+                -o-animation: fadein 3s; /* Opera < 12.1 */
+                animation: fadein 3s;
+                animation-fill-mode: forwards;      
+            }
+            .carousel {
+                width: 100vw;
+                height: 75vh;
+                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,1));
+
+            }
+            .carousel-controls {
+                display: flex;
+                flex-wrap: nowrap;
+                width: 100vw;
+                position: absolute;
+                top: 67vh;
+                height: 8vh;
+                line-height: 8vh;
+                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,.8));
+                color: white;
+                -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+                -moz-animation: fadein 3s; /* Firefox < 16 */
+                -ms-animation: fadein 3s; /* Internet Explorer */
+                -o-animation: fadein 3s; /* Opera < 12.1 */
+                animation: fadein 3s;
+                animation-fill-mode: forwards;   
+            }
+            .control {
+                font-size: 2em; 
+                cursor: pointer;
+            }
+            .left {
+                margin-left: 3vw;
+                float:left;
+            }
+            .right {
+                margin-right: 3vw;
+                float:right;
+            }
+            .center-ctrl{
+                width: 10vw;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+            .circle-selector {
+                cursor: pointer;
+                border-radius: 50%;
+                height: 12px;
+                width: 12px;
+                border-radius: 50%;
+                display: inline-block; 
+            }
+            .circle-selector-white, .circle-selector:hover{
+                background-color: white !important;
+            }
+            .circle-selector-transparent  {
+                background-color: transparent;
+                border:1px solid #ccc;
+            }
+            .text {
+                padding: 1%;
+            }
+            .demo-header {
+                font-size: 2.5em;
+            }
+            .view-site-btn {
+                text-align:center;
+                width: 25vw;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            a.border-button:hover, .border-button:hover {
+                border: 2px solid #333;
+                background-color: transparent !important;
+                color: black;
+                -webkit-transition: 0.5s ease;
+                -moz-transition: 0.5s ease;
+                -o-transition: 0.5s ease;
+                transition: 0.5s ease;
+                opacity: .7;
+            }
+            .button {
+                display: inline-block;
+                text-decoration: none;
+                position: relative;
+                cursor: pointer;
+                padding: 15px 20px;
+                -webkit-border-radius: 4px;
+                -moz-border-radius: 4px;
+                border-radius: 4px;
+                margin: 0 3px 0 0;
+                line-height: normal !important;
+                -webkit-appearance: none;
+                font-size: .9em;
+                font-weight: bold;
+                transition-property: all;
+                -webkit-transition: 0.5s ease;
+                -moz-transition: 0.5s ease;
+                -o-transition: 0.5s ease;
+                transition: 0.5s ease;
+                margin-bottom: 5%;
+            }
+            a.border-button {
+                background: #000000e0;
+                color: white;
+                border: 2px solid black;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                height: auto;
+                font-size: 1.5em;
+                font-weight: bold;
+            }
+            .demo-text {
+                width: 90vw;
+                margin-left: auto;
+                margin-right:auto;
+            }
+            .technologies {
+                width: 10vw;
+                height: 15vh;
+                padding-left: 2.5%;
+                padding-right: 2.5%;
+                opacity: 0;
+                animation: fadeIn 1s 1;
+                animation-fill-mode: forwards;
+            }
+            .first {
+                padding-left: 0;
+            }
+            .last {
+                padding-right:0;
+            }
+
+            @keyframes fadeIn {
+              0% {
+                opacity: 0.0;
+              }
+              100% {
+                opacity: 1.0;
+              }
+            }
+            .section-header {
+                padding-bottom: 15px;
+                border-bottom: 4px solid #f6f6f6;
+                color: #919191;
+            }
+            .box {
+                padding: 1%;
+                box-shadow: -1px 5px 20px 5px rgba(0, 0, 0, 0.03);
+                transition: 0.3s;
+            }
+            .box:hover {
+                box-shadow: -1px 5px 20px 5px rgba(0, 0, 0, 0.06);
+            }
+@media only screen and  (max-width: 600px){
+    p {
+        font-size: 5vw;
+    }
+    .section-header {
+        font-size: 10vw;
+    }
+}
