@@ -17,66 +17,67 @@
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
         <style>
             .carousel-image {
-                background-color:white;
+                background-color:#fdfdfd;
             }
+
         </style>
     </head>
     <body>
         <nav class="nav-bar" id="nav-bar">
             <a class="nav-link" href="./index.html">Main</a>
-            <a class="nav-link" href="./index.html#portfolio">Portfolio</a>
-            <a class="nav-link" href="./index.html#resume">Resume</a>
-            <a class="nav-link" href="./index.html#education">Education</a>
             <a class="nav-link" href="./index.html#personal">Personal</a>
+            <a class="nav-link" href="./index.html#portfolio">Portfolio</a>
+            <a class="nav-link" href="assets/paula_register_resume.pdf">Resume</a>
         </nav>
         <div class="content" id="body">
             <div class="text-content">
                 <div class="carousel" id="carousel">
-                  <img class="carousel-image" src="media/national-general-insurance-logo-vector.svg">
-                  <div class="carousel-controls">
-                    <span class="control left" onclick="plusDivs(-1)">&#10094;</span>
-                    <span class="center-ctrl">
-                        <span class="circle-selector circle-selector-transparent " onclick="currentDiv(1)"></span>
-                    </span>
-                    <span class="control right" onclick="plusDivs(1)">&#10095;</span>
-                  </div>
+                  <img class="carousel-image hover-transition" src="media/national-general-insurance-logo-vector.svg">
+
                 </div>
                 <div class="text">
-                    <div class="box">
+                    <div class="box process hover-transition">
                         <div class="demo-text">
                             <h1 class="demo-header section-header">National General Insurance</h1>
                             <p>
-                                TigerCenter is a site made by students, for students at the Rochester Institute of Technology, created to provide a more user-friendly interface than the often outdated, and difficult to navigate school websites.                                 Created by a self-directed team of students guided by mentors and advisors from multidisciplinary fields, ranging from software engineering to business to web design, TigerCenter provides a more intuitive, well-designed, cohesive place for students to search for and enroll in classes, view their schedule, view dining locations around campus, and calculate their GPA as well as much more.
-                            </p>
-                            <p>
-                                I worked at the Student IT Office responsible for creating and maintaining TigerCenter as a full-stack web developer, particularly focusing on the frontend. Originally written in AngularJS, TigerCenter was starting to show its age while serving an ever-increasing student body and it was decided that a rearchitecture of the original framework was necessary.
+                                At National General Insurance, I worked one on one with the senior architect to design and develop a website for internal administrative purposes. Their goal was to have a user-friendly location for less tech-savvy members of the organization to view customer information and orders. Through an iterative process of design, I delivered a product that could cleanly and efficiently display records for the tens of thousands of customer orders in the database.
                             </p>
                             <h1 class="demo-header section-header">The Process</h1>
                             <p>
-                                During the rearchitecture, we focused heavily on principles of software engineering and design in order to deliver a lightweight but high-performing, mobile first product. We used the iterative Agile methodology to shape our development process, running daily standups, conducting sprint demos, and gathering acceptance criteria from stakeholders.
+                                The work environment at National General Insurance was somewhat more relaxed and informal than I was previously accustomed to, and I was allowed almost complete creative freedom to decide the appearance of the site as well as the frameworks to use. Though the project was initially intended to be completed in AngularJS, given the relative age of that framework combined with the rapid advancements in Angular, I successfully campaigned to use Angular 2 instead, as I believed that it would be supported for a longer period of time and degrade more gracefully.
                             </p>
                             <p>
-                                As members of a multidisciplinary team consisting of three Web Developers, a Business Analyst, and a Web Designer, each member was expected to present to the project stakeholders and investors, conduct meetings, and interact with end-users in order to gather information on our target customer base. 
-                                
-                                We conducted several rounds of user acceptance testing and analyzed the results in order to refine our work and ensure that the new website would meet our user base's every expectation.
+                                For several months, I worked directly under the senior architect to design, write, and integrate the Angular frontend of the product with the REST API for the SQL Server. For this project, I primarily worked with Angular 2, C#, Bootstrap, HTML, and CSS, and did some minor work with the SQL Server. I conducted end-to-end testing to ensure the product's reliability and efficiency when dealing with large datasets. 
                             </p>
                         </div>
                     </div>
-                    <div class="box">
+                    <div class="box hover-transition">
                         <div class="demo-technologies demo-text">
                             <h1 class="section-header">Technologies Used</h1>
                             <div class="technologies-div">
-                                <img class="technologies first" src="media/angular.svg" alt="angular">
-                                <img class="technologies" src="media/c-sharp.svg" alt="java">
-                                <img class="technologies" src="media/bootstrap.svg" alt="bootstrap">
-                                <img class="technologies" src="media/html5.svg" alt="html5">
-                                <img class="technologies" src="media/maven.svg">
-                                <img class="technologies last" src="media/microsoft-sql.svg" alt="javascript">
+                                <a href="https://angular.io/" target="_blank">
+                                    <img class="technologies first" src="media/angular.svg" alt="angular">
+                                </a>
+                                <a href="https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/" target="_blank">
+                                    <img class="technologies" src="media/c-sharp.svg" alt="c-sharp">
+                                </a>
+                                <a href="https://getbootstrap.com/" target="_blank">
+                                    <img class="technologies" src="media/bootstrap.svg" alt="bootstrap">
+                                </a>
+                                <a href="https://www.w3schools.com/html/html5_intro.asp" target="_blank">
+                                    <img class="technologies" src="media/html5.svg" alt="html5">
+                                </a>
+                                <a href="https://maven.apache.org" target="_blank">
+                                    <img class="technologies" src="media/maven.svg" alt="maven">
+                                </a>
+                                <a href="https://www.microsoft.com/en-us/sql-server/default.aspx" target="_blank">
+                                    <img class="technologies last" src="media/microsoft-sql.svg" alt="microsoft sql">
+                                </a>
                             </div>
                         </div>
                         <div class="demo-text">
                             <p>
-                                On the backend, the administrative site is a C# project built with Apache Maven with a Microsoft SQL Server database. It uses Angular 2, HTML5, CSS, and Bootstrap for design. 
+                                On the backend, the administrative site is a C# project built with Apache Maven, with a Microsoft SQL Server database. It uses Angular 2, HTML5, CSS, and Bootstrap for design. 
                             </p>
                         </div>
                     </div>
@@ -86,11 +87,10 @@
         <footer class="footer">
             <div class="footer-padding">
                 <nav class="footer-nav-bar">
-                    <a class="footer-nav" onclick="topFunction()">Home</a>
-                    <a class="footer-nav" href="#portfolio">Portfolio</a>
-                    <a class="footer-nav" href="#resume">Resume</a>
-                    <a class="footer-nav" href="#education">Education</a>
-                    <a class="footer-nav" href="#personal">Personal</a>
+                    <a class="footer-nav" href="./index.html">Home</a>
+                    <a class="footer-nav" href="./index.html#personal">Personal</a>
+                    <a class="footer-nav" href="./index.html#portfolio">Portfolio</a>
+                    <a class="footer-nav" href="assets/paula_register_resume.pdf">Resume</a>
                 </nav>
                 <span class="footer-span">
                     Designed and built in pure HTML, CSS, and Javascript by Paula Register, 2018.

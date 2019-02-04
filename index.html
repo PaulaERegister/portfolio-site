@@ -15,6 +15,15 @@
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/montserrat" type="text/css"/>
         <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132343273-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-132343273-1');
+        </script>
     </head>
     <body>
         <!--Navigation bar-->
@@ -22,7 +31,7 @@
 
         <!--end of Navigation bar-->
         <div class="content" id="body"> 
-            <a name="intro"></a>
+            <a name="personal"></a>
             <div class="intro">
                 <div class="intro-slide" id="intro-slide">
                     <h1 class="intro-h1 h1-accent intro-slide-interval hideme">
@@ -35,10 +44,10 @@
                     <p class="intro-description hideme">
                         I'm Paula Register, a full-stack web developer and Computer Science major at Rochester Institute of Technology from Nashville, Tennessee. Building functional, elegant solutions and creating clean, user-friendly websites is my passion. You can check out some of my lastest work below!
                     </p>
-                    <p class="intro-description">
+                    <p class="intro-description hideme">
                         You can contact me at per4521@g.rit.edu.
                     </p>
-                    <div class="see-more">
+                    <div class="see-more hideme">
                         <p class="p-see-more">
                             See what I've done
                         </p>
@@ -112,67 +121,6 @@
                         </li>
                     </ul>
                 </div>
-            <div class="text-content resume">
-                <h1 class="h1-accent clickable resume-h1">
-                    <a name="resume">Resume</a>
-                </h1>
-                <div class="resume-div">
-                    <h2 class="resume-h2">Paula Register</h2>
-                    <div class="resume-top-padding">
-                        <h3 class="inline email resume-h3">per4521@g.rit.edu</h3>
-                        <h3 class="inline resume-h3">(615) 428-2018</h3>
-                    </div>
-                    <hr>
-                    <h3 class="resume-section-header">EDUCATION</h3>
-                    <h4 class="inline resume-h4">Bachelor of Science, Rochester Institute of Technology</h4>
-                    <h4 class="inline resume-h4-second">May 2021</h4>
-                    <div class="resume-top-padding">
-                        <p class="inline resume-p-padding">Major: Computer Science</p>
-                        <p class="inline resume-p-padding">GPA: 3.9</p>
-                        <p class="inline">Honors / Awards: Dean’s List</p>
-                        <p>Activities: Computer Science tutoring, Women in Computing, HoGS, WOESS, No Voice Zone, SSE</p>
-                    </div>
-                    <h4 class="inline resume-h4">MNVS, Nashville TN</h4>
-                    <h4 class="inline resume-h4-second">May 2016</h4>
-                    <div class="resume-top-padding">
-                        <p class="inline resume-p-padding-12">Valedictorian, Student Ambassador, Student Leadership Team, Model UN</p>
-                        <p class="inline">GPA: 4.10</p>
-                    </div>
-                    <h3 class="resume-section-header">EXPERIENCE</h3>
-                    <h4 class="inline resume-h4">
-                        Full-stack Web Developer, Student IT Office at RIT
-                    </h4>
-                    <h4 class="inline resume-h4-second">Jan 2018 – Aug 2018</h4>
-                    <ul>
-                        <li>Developed, tested, maintained, and rearchitected TigerCenter, a student portal used by over 15,000 students at RIT, using design patterns to optimize the application performance</li>
-                        <li>Met with product stakeholders to understand the business requirements for requested work</li>
-                        <li>Refactored code to enhance readability, efficiency, and usability for future development and debugging</li>
-                        <li>Applied the principles of Scrum as part of an Agile software development team</li>
-                    </ul>
-                    <h4 class="inline resume-h4">Junior Web Developer, National General Insurance</h4>
-                    <h4 class="inline resume-h4-second">June 2017 – Aug 2017</h4>
-                    <ul>
-                        <li>Developed and maintained website for administrative use using the Angular 2 framework, HTML, CSS, and C# on the backend </li>   		    
-                    </ul>                                         
-                    <h4 class="inline resume-h4">Computer Science Student Lab Instructor, RIT</h4>
-                    <h4 class="inline resume-h4-second">Aug 2017 – Dec 2017, Aug 2018 - Present</h4>
-                    <ul>
-                        <li>Assist professor during class and labs, answering student questions</li>
-                        <li>Grade student’s labs and projects and tutor students in various Computer Science courses</li>
-                    </ul>
-                    <h3 class="resume-h3">Additional Work and Volunteer Experience</h3>
-                    <ul>
-                        <li>Program Assistant at Nashville Career Advancement Center, worked with Program Director to coordinate and implement orientation training. Was primary lead in training sessions for 250 new interns. Performed basic office and administrative duties such as data entry, copying, filing, and answering telephones, as well as verifying I-9 documentation.</li>
-
-                        <li>Intern at Student Assignment Services under Nashville Career Advancement Center. Worked with other interns to present project plans to redistrict school zones to school administrators using ArcGIS software.</li>
-
-                        <li>Editor, writer, organizer, and volunteer at events for Give a Little Nashville. Editor and volunteer for Strum Magazine. Volunteer for various charitable organizations, including Lifestock for the American Cancer Society, Hope Nation, Over the Rainbow Consignment Sale and the Live 4 Tay Foundation.</li>
-                    </ul>
-                </div>
-                <h4 class="centered">
-                    <a class="resume-link" href="assets/resume.pdf" target="_blank">Click for a link to my resume</a>
-                </h4>
-            </div>
         </div>
         </div>
         <!--Footer-->
@@ -180,10 +128,9 @@
             <div class="footer-padding">
                 <nav class="footer-nav-bar">
                     <a class="footer-nav" onclick="topFunction()" style="cursor: pointer">Home</a>
-                    <a class="footer-nav" href="#portfolio">Portfolio</a>
-                    <a class="footer-nav" href="#resume">Resume</a>
-                    <a class="footer-nav" href="#education">Education</a>
                     <a class="footer-nav" href="#personal">Personal</a>
+                    <a class="footer-nav" href="#portfolio">Portfolio</a>
+                    <a class="footer-nav" href="assets/paula_register_resume.pdf" target="_blank">Resume</a>
                 </nav>
                 <span class="footer-span">
                     Designed and built in HTML, CSS, and Javascript by Paula Register, 2018.

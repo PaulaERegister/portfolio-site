@@ -1,3 +1,24 @@
+            body {
+                background-color:#f0f0f0;
+            }
+            .hover-transition {
+                transition: 0.2s ease-in-out;
+            }
+            .box {
+                background-color:white;
+                box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+            }
+            .process {
+                margin-top: 1%;
+                margin-bottom: 3%;
+            }
+            .box:hover {
+                box-shadow: 0 8px 16px 0 rgba(0,0,0,0.3);
+
+            }
+            .hover-transition:hover{ 
+                transform: scale(1.004);
+            }
 .nav-bar{
     background-color: black;
     padding: 1%;
@@ -6,6 +27,11 @@
 }
 .technologies {
     flex: 1 0 10%;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.technologies:hover {
+    transform: scale(1.2);
 }
 .technologies-div {
     justify-content: space-around;

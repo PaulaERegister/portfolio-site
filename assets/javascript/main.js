@@ -28,10 +28,10 @@
             });
         });
     });
-    ScrollReveal().reveal('.intro');
+/*    ScrollReveal().reveal('.intro');
     ScrollReveal().reveal('.headline');
     ScrollReveal().reveal('.intro-slide', {duration: 1000, distance: '110px', origin: 'left', reset: true});
     ScrollReveal().reveal('.intro-slide-interval', {duration: 1500, distance: '25%', origin: 'left', interval: 100, reset:true});    
     ScrollReveal().reveal('.see-more', {duration: 2000, distance: '50%', origin: 'bottom', reset:true});     
     ScrollReveal().reveal('.portfolio-interval', {duration: 1500, distance: '25%', origin: 'left', interval: 600, reset:true});      
-    ScrollReveal().reveal('.skills-interval', {duration: 1500, distance: '50%', origin: 'top', interval: 600, reset:true, delay: 0}); 
+    ScrollReveal().reveal('.skills-interval', {duration: 1500, distance: '50%', origin: 'top', interval: 600, reset:true, delay: 0}); */

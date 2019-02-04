@@ -15,14 +15,21 @@
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/glacial-indifference" type="text/css"/>
         <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/montserrat" type="text/css"/>
         <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132343273-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-132343273-1');
+        </script>
     </head>
     <body>
         <nav class="nav-bar" id="nav-bar">
             <a class="nav-link" href="./index.html">Main</a>
-            <a class="nav-link" href="./index.html#portfolio">Portfolio</a>
-            <a class="nav-link" href="./index.html#resume">Resume</a>
-            <a class="nav-link" href="./index.html#education">Education</a>
             <a class="nav-link" href="./index.html#personal">Personal</a>
+            <a class="nav-link" href="./index.html#portfolio">Portfolio</a>
+            <a class="nav-link" href="assets/paula_register_resume.pdf">Resume</a>
         </nav>
         <div class="content" id="body">
             <div class="text-content">
@@ -41,23 +48,23 @@
                   </div>
                 </div>
                 <div class="text">
-                    <div class="box">
+                    <div class="box process hover-transition">
                         <div class="demo-text">
                             <h1 class="demo-header section-header">TigerCenter</h1>
                             <p>
-                                TigerCenter is a site made by students, for students at the Rochester Institute of Technology, created to provide a more user-friendly interface than the often outdated, and difficult to navigate school websites.                                 Created by a self-directed team of students guided by mentors and advisors from multidisciplinary fields, ranging from software engineering to business to web design, TigerCenter provides a more intuitive, well-designed, cohesive place for students to search for and enroll in classes, view their schedule, view dining locations around campus, and calculate their GPA as well as much more.
+                                TigerCenter is a site made by students, for students at the Rochester Institute of Technology, created to provide a more user-friendly interface than the often outdated and difficult to navigate school websites.                                 Created by a self-directed team of students guided by mentors and advisors from multidisciplinary fields, ranging from software engineering to business to web design, TigerCenter provides a more intuitive, well-designed, cohesive place for students to search for and enroll in classes, view their schedule, calculate their expenses and GPA, as well as much more.
                             </p>
                             <p>
-                                I worked at the Student IT Office responsible for creating and maintaining TigerCenter as a full-stack web developer, particularly focusing on the frontend. Originally written in AngularJS, TigerCenter was starting to show its age while serving an ever-increasing student body and it was decided that a rearchitecture of the original framework was necessary.
+                                I worked at the Student IT Office responsible for creating and maintaining TigerCenter as a full-stack web developer with a focus on the frontend. Originally written in AngularJS, TigerCenter was starting to show its age in its outdated design and slow loading times while serving an ever-increasing student body. It was decided that a rearchitecture of the original framework was necessary.
                             </p>
                             <h1 class="demo-header section-header">The Process</h1>
                             <p>
-                                During the rearchitecture, we focused heavily on principles of software engineering and design in order to deliver a lightweight but high-performing, mobile first product. We used the iterative Agile methodology to shape our development process, running daily standups, conducting sprint demos, and gathering acceptance criteria from stakeholders.
+                                During the rearchitecture, we focused heavily on principles of software engineering and design in order to deliver a lightweight but high-performing, mobile-first product. We used the iterative Agile methodology to shape our development process, running daily standups, conducting sprint demos, and gathering acceptance criteria from stakeholders.
                             </p>
                             <p>
                                 As members of a multidisciplinary team consisting of three Web Developers, a Business Analyst, and a Web Designer, each member was expected to present to the project stakeholders and investors, conduct meetings, and interact with end-users in order to gather information on our target customer base. 
                                 
-                                We conducted several rounds of user acceptance testing and analyzed the results in order to refine our work and ensure that the new website would meet our user base's every expectation.
+                                We conducted several rounds of user acceptance testing and analyzed the results in order to refine our work and ensure that the new website would meet our user base's every expectation. Our testing showed that we decreased page loading time by an average of several seconds, improved user experience via a more modern design, and increased our user-base among both upper classmen and first years.
                             </p>
                             <img class="tc-image" src="./media/tigercenterLogin.png">
                         </div>
@@ -66,20 +73,29 @@
                         <div class="demo-technologies demo-text">
                             <h1 class="section-header">Technologies Used</h1>
                             <div class="technologies-div">
-                                <img class="technologies first" src="media/angular.svg" alt="angular">
-                                <img class="technologies" src="media/java.svg" alt="java">
-                                <img class="technologies" src="media/spring.svg" alt="java spring">
-                                <img class="technologies" src="media/bootstrap.svg" alt="bootstrap">
-        <!--
-                                <img class="technologies" src="media/maven.svg">
-        -->
-                                <img class="technologies" src="media/html5.svg" alt="html5">
-                                <img class="technologies last" src="media/jquery.svg" alt="javascript">
+                                <a href="https://angular.io/" target="_blank">
+                                    <img class="technologies first" src="media/angular.svg" alt="angular">
+                                </a>
+                                <a href="https://www.java.com/en/" target="_blank">
+                                    <img class="technologies" src="media/java.svg" alt="java">
+                                </a>
+                                <a href="https://spring.io/" target="_blank">
+                                    <img class="technologies" src="media/spring.svg" alt="java spring">
+                                </a>
+                                <a href="https://getbootstrap.com/" target="_blank">
+                                    <img class="technologies" src="media/bootstrap.svg" alt="bootstrap">
+                                </a>
+                                <a href="https://www.w3schools.com/html/html5_intro.asp" target="_blank">
+                                    <img class="technologies" src="media/html5.svg" alt="html5">
+                                </a>
+                                <a href="https://jquery.com/" target="_blank">
+                                    <img class="technologies last" src="media/jquery.svg" alt="javascript">
+                                </a>
                             </div>
                         </div>
                         <div class="demo-text">
                             <p>
-                                On the backend, TigerCenter is a Java project built with Apache Maven, using the Java Spring framework. It uses Angular 4 and jQuery for functionality, and HTML5, CSS, and Bootstrap for design. 
+                                On the backend, TigerCenter is a Java project built with Apache Maven, using the Java Spring MVC framework. It uses Angular 4 and jQuery for functionality, and HTML5, CSS, and Bootstrap for design. 
                             </p>
                             <div class="view-site-btn">
                                 <a class="button border-button visit-project-btn" href="https://tigercenter.rit.edu/tigerCenterHome/auth" target="_blank">View Site</a>
@@ -92,11 +108,10 @@
         <footer class="footer">
             <div class="footer-padding">
                 <nav class="footer-nav-bar">
-                    <a class="footer-nav" onclick="topFunction()">Home</a>
-                    <a class="footer-nav" href="#portfolio">Portfolio</a>
-                    <a class="footer-nav" href="#resume">Resume</a>
-                    <a class="footer-nav" href="#education">Education</a>
-                    <a class="footer-nav" href="#personal">Personal</a>
+                    <a class="footer-nav" href="./index.html">Home</a>
+                    <a class="footer-nav" href="./index.html#personal">Personal</a>
+                    <a class="footer-nav" href="./index.html#portfolio">Portfolio</a>
+                    <a class="footer-nav" href="assets/paula_register_resume.pdf">Resume</a>
                 </nav>
                 <span class="footer-span">
                     Designed and built in pure HTML, CSS, and Javascript by Paula Register, 2018.
