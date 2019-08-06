@@ -91,13 +91,16 @@
         line-height: 25vh;
     }
     .portfolio-content {
-        height: 45vh;
+        font-size: 200%;
     }
     .portfolio-what-i-do-image {
+        display: none;
+/*
         background-size: cover;
         flex-basis: 65vw;
         height: 40vh;
         margin-right: 1%;
+*/
     }
     .h1-portfolio {
         top: 2.5vh;

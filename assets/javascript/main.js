@@ -15,8 +15,8 @@
     }
     $(document).ready(function() {
         $(window).scroll(function(){
-            var h = $(".intro-slide").height() + $(".portfolio-image").height() + $(".portfolio-content").height() + $(".slides").height() + $(".resume").height() + $(".head").height() - $(".content").height() - 200;
-            document.getElementById("footer").style.marginTop = h+"px";
+//            var h = $(".intro-slide").height() + $(".portfolio-image").height() + $(".portfolio-content").height() + $(".slides").height() + $(".resume").height() + $(".head").height() - $(".content").height() - 200;
+//            document.getElementById("footer").style.marginTop = h+"px";
         });
         $(window).scroll( function(){
             $('.hideme').each( function(i){
