@@ -1,6 +1,8 @@
 <script>
     let scrollpos = window.scrollY
     const header = document.querySelector("nav")
+    const white = document.getElementById("white-github")
+    const black = document.getElementById("black-github")
     const header_height = header.offsetHeight
     var body = document.body,
     html = document.documentElement;
@@ -11,14 +13,18 @@
                            html.clientHeight, html.scrollHeight, html.offsetHeight);
     const add_class_on_scroll = () => {
         header.classList.add("fade-in");
-        header.classList.remove('fade-out');
+     header.classList.remove('fade-out');
         header.classList.add("pin-to-top");
-        header.classList.add("black-background")
+        header.classList.add("black-background");
+        black.classList.add("hide")
+        white.classList.remove("hide")
     }
     const remove_class_on_scroll = () => {
         header.classList.remove("fade-in"); 
         header.classList.add("fade-out");
         header.classList.remove("black-background");
+        black.classList.remove("hide")
+        white.classList.add("hide")
     }
     window.addEventListener('scroll', function() { 
         scrollpos = window.scrollY;
@@ -37,9 +43,18 @@
       })
 </script>
 <nav class="nav-bar" id="nav-bar">
-    <a class="nav-link" href="#personal">Personal</a>
+    <a class="nav-link" href="#aboutme">About Me</a>
+    <a class="nav-link" href="#education">Education</a>
     <a class="nav-link" href="#portfolio">Portfolio</a>
     <a class="nav-link" href="assets/paula_register_resume.pdf" target="_blank">Resume</a>
+    <a href="https://github.com/PaulaERegister/" target="_blank" class="github-icons">
+        <img id="black-github"
+             class="github"
+             src="media/github.svg" alt="github">
+        <img id="white-github" 
+             class="github hide"
+             src=media/github-svg-icon-1.jpg>
+    </a>
 </nav>
 <div class="header-image">
     <h1 class="header-tagline fade-in">Hi, I'm</h1>

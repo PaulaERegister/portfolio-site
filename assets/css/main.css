@@ -235,17 +235,20 @@ div .header-text:after {
     opacity: 0.8;
 }
 .intro {
-    padding-bottom: 1%;
-    padding-left:1%;
-    padding-right:1%;
-/*
-    box-shadow: 2px 5px 20px 0px rgba(0, 0, 0, 0.05);
-*/
+
     padding-top: 3%;
     height:92vh;
-/*
-    background-color:white;
-*/
+}
+.display {
+    display: auto;
+}
+
+.github-icons {
+    float:right; 
+    padding-right: 5vw
+}
+.github {
+    height:3vw;
 }
 
 .text-content {
@@ -268,7 +271,8 @@ div .header-text:after {
 }
 .p-see-more {
     margin-bottom: 0.5em;
-    margin-top:1.5em
+    margin-top: 0.5em;
+
 }
 .svg-link{
     height: 1.75rem;
@@ -276,6 +280,71 @@ div .header-text:after {
     position: relative;
     cursor: pointer;
 }
+.education-flex {
+    display: flex;
+    justify-content: space-between;
+}
+.education-rit {
+    margin-top:1vh; 
+    margin-bottom: 0;
+}
+.split {
+
+    padding-left: 2vw;
+}
+.italics {
+    font-style: italic;
+}
+
+.ul-content {
+      background: rgba(250, 224, 66, .2);
+  border-bottom: 1px solid rgba(250, 224, 66, .45);
+
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  padding: .5rem 1rem;
+      transition: all 0.25s ease-out;
+
+}
+ul { list-style-type: none; }
+label {
+    cursor: pointer;
+}
+input[type=checkbox] { display: none; }
+input[type=checkbox] ~ ul { 
+	max-height: 0;
+	max-width: 0;
+	opacity: 0;
+	overflow: hidden;
+    transition: all 0.25s ease-out;
+   -webkit-transition:all 0.25s ease;  
+   -moz-transition:all 0.25s ease;  
+   -o-transition:all 0.25s ease;  
+}
+.inner-ul {
+    padding: 0;
+}
+input[type=checkbox]:checked ~ ul { 
+	max-height: 100%;
+	max-width: 100%;
+	opacity: 1;
+}
+input[type=checkbox] + label:before{
+  content: ' ';
+  display: inline-block;
+
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid currentColor;
+
+  vertical-align: middle;
+  margin-right: .7rem;
+
+}
+input[type=checkbox]:checked + label:before {
+	transform: rotate(90deg);
+}
+
 .header-text { 
     font-family: 'CMUSerifRoman'; 
     font-weight: 500; 
